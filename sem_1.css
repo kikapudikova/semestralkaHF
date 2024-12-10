@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #000;
+  color: #fff;
+}
+
+.header-bar {
+  background-color: #348434;
+  padding: 1px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo-container h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+.logo-container span {
+  color: #4caf50;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000000; /* Pozadie navigácie */
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 50px; /* Medzera medzi položkami menu */
+}
+
+nav ul li a {
+  color: #fff; /* Predvolená farba textu */
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Plynulý prechod farby */
+}
+
+nav ul li a:hover {
+  color: #fff; /* Zmena farby textu na bielu pri hover */
+  background-color: #4caf50; /* Voliteľné: zelené pozadie pri hover */
+  padding: 5px 10px; /* Voliteľné: zvýraznenie */
+  border-radius: 5px; /* Voliteľné: zaoblenie pozadia */
+}
+
+.recipes {
+  text-align: center;
+  padding: 20px;
+}
+
+.recipes h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Umožní presúvanie položiek na nový riadok */
+}
+
+.category {
+  text-align: center;
+  flex: 1 1 100px; /* Každá kategória zaberie minimálne 100px, maximálne zvyšný priestor */
+}
+
+.category img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease; /* Prechod pri zväčšení */
+}
+
+.category img:hover {
+  transform: scale(1.1); /* Zväčšenie obrázka pri hover */
+}
+
+.category p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Responzívne zmeny pre menšie obrazovky */
+@media (max-width: 480px) {
+  .logo-container img {
+    width: 50%; /* Zmenší šírku loga na polovicu */
+    height: auto; /* Zachová proporcie */
+  }
+
+  nav ul {
+    flex-direction: column; /* Zvislé menu na úzkych obrazovkách */
+    align-items: center; /* Zarovná položky na stred */
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Medzera medzi položkami menu */
+  }
+
+  nav ul li a {
+    font-size: 16px; /* Zmenší veľkosť písma pre mobil */
+    padding: 10px; /* Pridanie paddingu pre lepšiu klikateľnosť */
+  }
+
+  .recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Vycentruje celú sekciu */
+    padding: 20px;
+  }
+
+  .recipes h2 {
+    font-size: 24px;
+  }
+
+  .categories {
+    flex-direction: column; /* Kategórie budú zobrazené vertikálne */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .category {
+    width: 80%; /* Šírka každej kategórie */
+    max-width: 300px; /* Maximálna šírka pre konzistenciu */
+  }
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Obrázky sú zarovnané na stred */
+  }
+
+  .category img {
+    width: 100%; /* Obrázok zaberie celú šírku kontajnera */
+    height: auto; /* Zachová proporcie */
+  }
+
+  .category p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories {
+    gap: 20px; /* Zmenšenie medzier medzi kategóriami */
+  }
+
+  .category {
+    width: 120px; /* Zmenšenie šírky kategórie */
+  }
+
+  .category p {
+    font-size: 16px; /* Zmenšenie textu pod obrázkami */
+  }
+}
+footer {
+  background-color: #348434; /* Zelená farba */
+  text-align: center;
+  color: white; /* Biela farba textu */
+  padding: 10px 0;
+  font-size: 14px;
+}

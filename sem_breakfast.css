@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "Arial";
+  color: #fff;
+  background-color: #000;
+}
+
+.header-bar {
+  background-color: #348434;
+  padding: 1px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.title h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+/* Recepty */
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Každý recept */
+.recipe-container {
+  flex: 1 1 500px;
+  border: 3px solid #4caf50;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #111;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.recipe-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Obsah receptu */
+.recipe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Obrázok */
+.image-section img {
+  max-width: 100%;
+  border: none; /* Odstráni orámovanie */
+  border-radius: 0; /* Nastaví ostré hrany */
+}
+
+/* Ingrediencie a kroky */
+.recipe-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ingredients,
+.steps {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.ingredients h3,
+.steps h3 {
+  margin-top: 0;
+}
+
+.ingredients ul,
+.steps ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ingredients li,
+.steps li {
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #348434; /* Zelená farba */
+  text-align: center;
+  color: white; /* Biela farba textu */
+  padding: 10px 0;
+  font-size: 14px;
+}
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#recipe-search {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#recipe-search:focus {
+  outline: none;
+  border-color: #007bff;
+}

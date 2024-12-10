@@ -1,0 +1,138 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Čierne pozadie stránky */
+  color: #fff;
+}
+
+.header-bar {
+  background-color: #348434;
+  padding: 1px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Contact Form */
+.contact-form {
+  background: linear-gradient(
+    to bottom,
+    #0e3b15,
+    #000000
+  ); /* Gradient pre obdlžník */
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex: 1;
+  color: #fff;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+/* Form Styles */
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #348434;
+}
+
+/* Submitted Data Section */
+.submitted-data {
+  background: linear-gradient(
+    to bottom,
+    #348434,
+    #000000
+  ); /* Gradient pre sekciu údajov */
+  color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background-color: #348434; /* Zelená farba */
+  text-align: center;
+  color: white; /* Biela farba textu */
+  padding: 10px 0;
+  font-size: 14px;
+}
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo-container h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+.logo-container span {
+  color: #4caf50;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 480px) {
+  .logo-container img {
+    width: 50%; /* Zmenší šírku loga na polovicu */
+    height: auto; /* Zachová proporcie */
+  }

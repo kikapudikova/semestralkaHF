@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Čierne pozadie stránky */
+  color: #f5f4f4;
+}
+
+.header-bar {
+  background-color: #348434;
+  padding: 1px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+footer {
+  background-color: #348434; /* Zelená farba */
+  text-align: center;
+  color: white; /* Biela farba textu */
+  padding: 10px 0;
+  font-size: 14px;
+}
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo-container h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+.logo-container span {
+  color: #4caf50;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.container {
+  background: linear-gradient(
+    to bottom,
+    #0e3b15,
+    #000000
+  ); /* Gradient pre obdlžník */
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+@media (max-width: 480px) {
+  .logo-container img {
+    width: 50%; /* Zmenší šírku loga na polovicu */
+    height: auto; /* Zachová proporcie */
+  }
